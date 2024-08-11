@@ -1,6 +1,7 @@
 async function getVideos(id: string) {
-  const response = await fetch(`${process.env.MOVIE_API}/${id}/videos`);
-  return response.json();
+  throw new Error("something broke...");
+  // const response = await fetch(`${process.env.MOVIE_API}/${id}/videos`);
+  // return response.json();
 }
 
 export default async function MovieVideos({ id }: { id: string }) {

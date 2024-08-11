@@ -15,9 +15,11 @@ export default async function MovieDetail({
   //suspense에는 fallback props이 있는데, 컴포넌트가 await 되는 동안 표시할 메세지를 Render 할 수 있도록 해준다.
   return (
     <h1>
+      <h3>movie detail page</h3>
       <Suspense fallback={<h1>loading movie info</h1>}>
         <MovieInfo id={id} />
       </Suspense>
+      <h4>Videos</h4>
       <Suspense fallback={<h1>loading movie videos</h1>}>
         <MovieVideos id={id} />
       </Suspense>

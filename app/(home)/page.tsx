@@ -35,12 +35,12 @@ export default async function HomePage() {
 
   return (
     <div>
+      <h1>Home</h1>
       {movies.map((movie) => (
         <li key={movie.id}>
           <Link href={`/movies/${movie.id}`}>{movie.title}</Link>
         </li>
       ))}
-      <h1>Home</h1>
     </div>
   );
 }
